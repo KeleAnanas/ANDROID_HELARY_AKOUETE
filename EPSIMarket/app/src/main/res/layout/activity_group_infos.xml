@@ -8,21 +8,28 @@
 
     <!--Déclaration de la toolbar-->
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/activity_home_toolbar"
+        android:id="@+id/activity_groupinfo_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:minHeight="?attr/actionBarSize"
-        app:title="@string/app_name"
-        app:titleTextColor="@android:color/white"
-        app:titleMarginStart="130dp"/>
+        android:minHeight="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Group Infos"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </androidx.appcompat.widget.Toolbar>
 
     <Button
         android:id="@+id/activity_groupinfo_btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="200dp"
+        android:padding="30dp"
         android:text="Etudiant 1" />
 
     <Button
@@ -31,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:padding="30dp"
         android:text="etudiant 2" />
 
 </LinearLayout>
