@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <!--Déclaration de la toolbar-->
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/activity_groupinfo_toolbar"
+        android:id="@+id/activity_rayons_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_dark"
@@ -17,28 +16,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Infos"
+            android:text="Rayons"
             android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="@android:color/white"/>
     </androidx.appcompat.widget.Toolbar>
 
-    <Button
-        android:id="@+id/activity_groupinfo_btn1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="200dp"
-        android:padding="30dp"
-        android:text="Etudiant 1" />
-
-    <Button
-        android:id="@+id/activity_groupinfo_btn2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:padding="30dp"
-        android:text="etudiant 2" />
-
-</LinearLayout>
+</RelativeLayout>
