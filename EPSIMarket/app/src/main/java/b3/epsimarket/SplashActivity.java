@@ -21,9 +21,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        /**
-         * Affichage du splashscreen avec un timer
-         */
+        //Affichage du splashscreen avec un timer
         new Handler().postDelayed(new Runnable() {
 
             //Cette méthode est executé une fois que le timer est fini
@@ -32,7 +30,7 @@ public class SplashActivity extends AppCompatActivity {
                 Intent i = new Intent(SplashActivity.this, HomeActivity.class);
                 startActivity(i);
 
-                //Fermeture de l'activité
+                //Fermeture de cette activité
                 finish();
             }
         }, SPLASH_DISPLAY_LENGTH);

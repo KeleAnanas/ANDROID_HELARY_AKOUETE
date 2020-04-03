@@ -15,7 +15,8 @@
         android:background="@color/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         app:title="@string/app_name"
-        app:titleTextColor="@android:color/white" />
+        app:titleTextColor="@android:color/white"
+        app:titleMarginStart="130dp"/>
 
     <Button
         android:id="@+id/activity_home_btn1"
