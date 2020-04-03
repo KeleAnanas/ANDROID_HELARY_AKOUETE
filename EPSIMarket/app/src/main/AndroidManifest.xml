@@ -9,21 +9,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".HomeActivity"></activity>
-
+        <activity android:name=".HomeActivity" />
         <activity
             android:name=".GroupInfosActivity"
+            android:parentActivityName=".HomeActivity" />
+        <activity android:name=".StudentInfoActivity" />
+        <activity
+            android:name=".RayonsActivity"
             android:parentActivityName=".HomeActivity"></activity>
-
-        <activity android:name=".StudentInfoActivity"></activity>
     </application>
 
 </manifest>

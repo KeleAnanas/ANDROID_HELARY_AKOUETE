@@ -32,5 +32,14 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(groupInfoActivity);
             }
         });
+
+        //Lancement de l'activité Rayons lorsque le bouton est appuyé
+        btnZone2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent rayonsActivity = new Intent(HomeActivity.this, RayonsActivity.class);
+                startActivity(rayonsActivity);
+            }
+        });
     }
 }
