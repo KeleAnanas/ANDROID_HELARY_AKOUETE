@@ -9,6 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".AkoueteInfosActivity"
+            android:parentActivityName=".GroupInfosActivity" />/>
+        <activity android:name=".HelaryInfosActivity"
+            android:parentActivityName=".GroupInfosActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +27,7 @@
         <activity android:name=".StudentInfoActivity" />
         <activity
             android:name=".RayonsActivity"
-            android:parentActivityName=".HomeActivity"></activity>
+            android:parentActivityName=".HomeActivity" />
     </application>
 
 </manifest>

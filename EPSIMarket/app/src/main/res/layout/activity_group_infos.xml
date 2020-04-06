@@ -7,38 +7,40 @@
     android:layout_height="match_parent">
 
     <!--Déclaration de la toolbar-->
+
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/activity_groupinfo_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_green_dark"
         android:minHeight="?attr/actionBarSize">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="Infos"
+            android:text="@string/infos"
+            android:textColor="@android:color/white"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@android:color/white"/>
+            android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
     <Button
-        android:id="@+id/activity_groupinfo_btn1"
+        android:id="@+id/activity_groupinfo_btnHelary"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="200dp"
         android:padding="30dp"
-        android:text="Etudiant 1" />
+        android:text="@string/Helary_name" />
 
     <Button
-        android:id="@+id/activity_groupinfo_btn2"
+        android:id="@+id/activity_groupinfo_btnAkouete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:padding="30dp"
-        android:text="etudiant 2" />
+        android:text="@string/Akouete_name" />
 
 </LinearLayout>

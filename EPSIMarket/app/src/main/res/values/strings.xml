@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">EPSI Market</string>
+    <string name="infos">Infos</string>
+    <string name="Helary_name">Léa Helary</string>
+    <string name="Akouete_name">Anaël Akouete</string>
+    <string name="INFORMATIONS">INFORMATIONS</string>
+    <string name="mail_helary">lea.helary@epsi.fr</string>
+    <string name="mail_akouete">anael.akouete@epsi.fr</string>
+    <string name="site_epsi">http://www.epsi.fr/</string>
+    <string name="groupe">B3 groupe 1</string>
 </resources>
