@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".AkoueteInfosActivity"
-            android:parentActivityName=".GroupInfosActivity" />/>
+            android:parentActivityName=".GroupInfosActivity" />
         <activity android:name=".HelaryInfosActivity"
             android:parentActivityName=".GroupInfosActivity" />
         <activity android:name=".SplashActivity">
