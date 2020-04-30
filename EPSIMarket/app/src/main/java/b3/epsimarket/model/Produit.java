@@ -3,13 +3,13 @@ package b3.epsimarket.model;
 import org.json.JSONObject;
 import java.io.Serializable;
 
-public class Boisson implements Serializable{
+public class Produit implements Serializable{
 
     private String name="";
     private String description="";
     private String pictureUrl="";
 
-    public Boisson(JSONObject jsonObject){
+    public Produit(JSONObject jsonObject){
         name=jsonObject.optString("name","");
         description=jsonObject.optString("description","");
         pictureUrl=jsonObject.optString("picture_url","");

@@ -32,19 +32,11 @@ public class RayonAdaptater extends ArrayAdapter<Rayon> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-
         LayoutInflater li = (LayoutInflater) this.getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = li.inflate(R.layout.c_student, null);
-
-        TextView textViewName=convertView.findViewById(R.id.textViewName);
-        TextView textViewEmail=convertView.findViewById(R.id.textViewEmail);
-        ImageView imageView=convertView.findViewById(R.id.imageViewStudent);
-
-        Rayon rayon=getItem(position);
-
-        textViewName.setText(rayon.getCategory_id());
-        textViewEmail.setText(rayon.getTitle());
-        Picasso.get().load(rayon.getProductsUrl()).into(imageView);
+        convertView = li.inflate(R.layout.rayons, null);
+        TextView nom_rayon = (TextView) convertView.findViewById(R.id.nom_rayon);
+        Rayon rayon = getItem(position);
+        nom_rayon.setText(rayon.getTitle());
         return convertView;
     }
 }

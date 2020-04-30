@@ -12,8 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BoissonDetailsActivity"></activity>
-        <activity android:name=".BoissonActivity" />
+        <activity android:name=".ProduitDetailsActivity" />
+        <activity android:name=".ProduitActivity" />
         <activity
             android:name=".AkoueteInfosActivity"
             android:parentActivityName=".GroupInfosActivity" />
