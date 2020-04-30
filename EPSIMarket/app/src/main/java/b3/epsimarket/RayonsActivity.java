@@ -1,15 +1,11 @@
 package b3.epsimarket;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -19,7 +15,7 @@ import java.util.ArrayList;
 
 import b3.epsimarket.model.Rayon;
 
-public class RayonsActivity extends AppCompatActivity {
+public class RayonsActivity extends ApplicationActivity {
 
     public final String CATEGORY_URI = "http://djemam.com/epsi/categories.json";
     private ArrayList<Rayon> rayons;
@@ -27,14 +23,15 @@ public class RayonsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.liste_rayons);
+
         //Déclaration de la toolbar dans l'activité
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_rayons_toolbar);
         setSupportActionBar(toolbar);
         //Affichage du bouton back
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.liste_rayons);
 
         rayons = new ArrayList();
         ListView listView = findViewById(R.id.liste_rayons);
@@ -66,7 +63,7 @@ public class RayonsActivity extends AppCompatActivity {
             jsonObject=new JSONObject(data);
             JSONArray jsonArray=jsonObject.getJSONArray("items");
             for(int i=0;i<jsonArray.length();i++){
-                Rayon rayon =new Rayon(jsonArray.getJSONObject(i));
+                Rayon rayon = new Rayon(jsonArray.getJSONObject(i));
                 rayons.add(rayon);
             }
         } catch (JSONException e) {
