@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 /**
  * Activité de la page principale de l'application
@@ -23,6 +24,9 @@ public class HomeActivity extends AppCompatActivity {
 
         btnZone1 = (Button) findViewById(R.id.activity_home_btn1);
         btnZone2 = (Button) findViewById(R.id.activity_home_btn2);
+
+        TextView textView = findViewById(R.id.l_header_text);
+        textView.setText(R.string.app_name);
 
         //Lancement de l'activité GroupInfo lorsque le bouton est appuyé
         btnZone1.setOnClickListener(new View.OnClickListener() {

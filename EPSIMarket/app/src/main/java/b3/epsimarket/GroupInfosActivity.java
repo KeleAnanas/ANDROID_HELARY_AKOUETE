@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
@@ -20,6 +21,9 @@ public class GroupInfosActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_group_infos);
+
+        TextView textView = findViewById(R.id.l_header_text);
+        textView.setText(R.string.infos);
 
         //Déclaration de la toolbar dans l'activité
         Toolbar toolbar = (Toolbar) findViewById(R.id.activity_groupinfo_toolbar);

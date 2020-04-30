@@ -8,13 +8,9 @@
     android:weightSum="100">
 
     <!--Déclaration de la toolbar-->
-
-   <include
-       android:id="@+id/actitvity_akouete"
-       layout="@layout/l_header"
-       android:text="@string/Akouete_name"
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent"/>
+    <include
+       android:id="@+id/activity_akouete_infos_toolbar"
+       layout="@layout/l_header"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -94,7 +90,4 @@
                 android:text="@string/site_epsi" />
         </LinearLayout>
     </RelativeLayout>
-
-
-
 </LinearLayout>
