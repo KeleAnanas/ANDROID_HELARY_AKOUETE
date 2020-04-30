@@ -9,22 +9,12 @@
 
     <!--Déclaration de la toolbar-->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/activity_akouete_infos_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/holo_green_dark"
-        android:minHeight="?attr/actionBarSize">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="@string/Akouete_name"
-            android:textColor="@android:color/white"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </androidx.appcompat.widget.Toolbar>
+   <include
+       android:id="@+id/actitvity_akouete"
+       layout="@layout/l_header"
+       android:text="@string/Akouete_name"
+       android:layout_height="wrap_content"
+       android:layout_width="match_parent"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
