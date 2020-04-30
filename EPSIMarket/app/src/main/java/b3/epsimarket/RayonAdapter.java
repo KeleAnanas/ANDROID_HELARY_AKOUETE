@@ -23,9 +23,9 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 import b3.epsimarket.model.Rayon;
 
-public class RayonAdaptater extends ArrayAdapter<Rayon> {
+public class RayonAdapter extends ArrayAdapter<Rayon> {
 
-    public RayonAdaptater(@NonNull Context context, int resource, @NonNull List<Rayon> objects) {
+    public RayonAdapter(@NonNull Context context, int resource, @NonNull List<Rayon> objects) {
         super(context, resource, objects);
     }
 

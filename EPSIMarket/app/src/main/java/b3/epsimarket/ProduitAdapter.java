@@ -17,9 +17,9 @@ import java.util.List;
 
 import b3.epsimarket.model.Produit;
 
-public class ProduitAdaptater extends ArrayAdapter<Produit> {
+public class ProduitAdapter extends ArrayAdapter<Produit> {
 
-    public ProduitAdaptater(@NonNull Context context, int resource, @NonNull List<Produit> objects) {
+    public ProduitAdapter(@NonNull Context context, int resource, @NonNull List<Produit> objects) {
         super(context, resource, objects);
     }
 
